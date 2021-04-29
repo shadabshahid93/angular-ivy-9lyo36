@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<p>
+  Welcome to component interaction demo
+</p>
+
+<img [src]="imgUrl" alt="image"><br>
+
+<button (click)="incrementCount()">click</button>
+<p>Clicked {{count}} times</p>
+
+
+<input type="text" [(ngModel)]="name">
+<p>Welcome {{name}}</p>
+
+<input type="text" [ngModel]="userName" (ngModelChange)="userName=$event">
+<p>Welcome back {{userName}}</p>
